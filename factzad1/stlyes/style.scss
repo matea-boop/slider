@@ -1,0 +1,38 @@
+$pozadina: #ffffff;
+$strelice: #DDDDDD;
+$onhover: #134880;
+
+body{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
+.main-wrapper{
+  position: relative;
+  width: 1920px;
+  height: 730px;
+
+  background: $pozadina;
+}
+.main-wrapper .container{
+  max-width: 941px;
+  margin: 0px auto;
+  height: 730px;
+}
+
+/*HEADER i FOOTER*/
+@import './headerfooter';
+
+/*GALLERY LAYOUT*/
+@import './gallery';
+
+/*TEXT BOX*/
+@import './textbox';
+
+/*BUTTONS*/
+@import './buttons';
+

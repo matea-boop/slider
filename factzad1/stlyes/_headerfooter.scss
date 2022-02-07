@@ -1,0 +1,29 @@
+.header{
+  gap: 10px;
+}
+.header .col-lg-8{
+  flex: 1;
+} 
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100px;
+  
+  border-radius: 0px 0px 5px 5px;
+  background: $strelice;
+}
+.header p,.footer p{  
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 80px;
+  
+  display: flex;
+  align-items: flex-end;
+    
+  color: $pozadina;
+  font-family: 'Ubuntu', sans-serif;
+}
+.footer .box{
+   border-radius: 5px 5px 0px 0px;
+}
