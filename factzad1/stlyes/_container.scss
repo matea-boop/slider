@@ -1,0 +1,21 @@
+body{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.main-wrapper{
+  position: relative;
+  width: 1920px;
+  height: 730px;
+
+  background: $background;
+}
+.main-wrapper .container{
+  max-width: 941px;
+  height: 730px;
+  margin: 0px auto;
+}

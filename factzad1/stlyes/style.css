@@ -1,3 +1,5 @@
+/*VARABLES*/
+/*CONTAINER*/
 body {
   margin: 0;
   padding: 0;
@@ -19,11 +21,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 .main-wrapper .container {
   max-width: 941px;
-  margin: 0px auto;
   height: 730px;
+  margin: 0px auto;
 }
 
-/*HEADER i FOOTER*/
+/*HEADER and FOOTER*/
 .header {
   gap: 10px;
 }
@@ -49,7 +51,21 @@ h1, h2, h3, h4, h5, h6, p {
   background: #DDDDDD;
 }
 
-.header p, .footer p {
+.header p {
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.footer p {
   font-size: 15px;
   line-height: 18px;
   padding-left: 80px;
@@ -109,21 +125,12 @@ h1, h2, h3, h4, h5, h6, p {
   gap: 10px !important;
 }
 
-.grid-wrap .gallery-box {
-  height: 410px;
-  width: 640px;
-  padding: 0;
-}
-
 .grid-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.grid-img {
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -184,7 +191,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #ffffff;
 }
 
-.arrow-buttons .prev, .arrow-buttons .next {
+.prev {
   cursor: pointer;
   display: block;
   width: 60px;
@@ -197,11 +204,32 @@ h1, h2, h3, h4, h5, h6, p {
   transition: 0.3s all;
 }
 
-.arrow-buttons .prev:hover, .arrow-buttons .next:hover {
+.prev:hover {
   border: 1px solid #134880;
 }
 
-.arrow-buttons .prev:hover i, .arrow-buttons .next:hover i {
+.prev:hover i {
+  color: #134880;
+}
+
+.next {
+  cursor: pointer;
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.next:hover {
+  border: 1px solid #134880;
+}
+
+.next:hover i {
   color: #134880;
 }
 
@@ -209,36 +237,5 @@ h1, h2, h3, h4, h5, h6, p {
   color: #DDDDDD;
   font-size: 16px;
   width: 9.98px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .row.grid-img .column {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .row.grid-img .column {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-  .buttons .prev, .buttons .next {
-    display: inline-block;
-    margin: 20px 10px 10px;
-  }
-  .buttons {
-    text-align: center;
-  }
-  .grid-wrap .text-box {
-    padding: 20px;
-    text-align: center;
-  }
 }
 /*# sourceMappingURL=style.css.map */

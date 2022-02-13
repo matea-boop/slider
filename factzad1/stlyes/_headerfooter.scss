@@ -1,3 +1,15 @@
+@mixin text() {
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 80px;
+  
+  display: flex;
+  align-items: flex-end;
+    
+  color: $background;
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .header{
   gap: 10px;
 }
@@ -11,18 +23,13 @@
   height: 100px;
   
   border-radius: 0px 0px 5px 5px;
-  background: $strelice;
+  background: $arrows;
 }
-.header p,.footer p{  
-  font-size: 15px;
-  line-height: 18px;
-  padding-left: 80px;
-  
-  display: flex;
-  align-items: flex-end;
-    
-  color: $pozadina;
-  font-family: 'Ubuntu', sans-serif;
+.header p{
+  @include text();
+}
+.footer p{
+  @include text();
 }
 .footer .box{
    border-radius: 5px 5px 0px 0px;

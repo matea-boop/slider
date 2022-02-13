@@ -1,19 +1,12 @@
-.arrow-buttons{
-    width: 60px;
-    height: 130px;
-    padding-left: 100px;
-
-    background-color: $pozadina;
-}
-.arrow-buttons .prev , .arrow-buttons .next{
+@mixin arrow() {
     cursor: pointer;
     display: block;
     width: 60px;
     height: 60px;
     margin-bottom: 10px;
 
-    background-color: $pozadina;
-    border: 1px solid $strelice;    
+    background-color: $background;
+    border: 1px solid $arrows;    
     border-radius: 5px;
       
     transition: 0.3s all;
@@ -24,9 +17,23 @@
             color: $onhover;
         }
     }
+}
+
+.arrow-buttons{
+    width: 60px;
+    height: 130px;
+    padding-left: 100px;
+
+    background-color: $background;
+}
+.prev{
+    @include arrow();
+}
+.next{
+    @include arrow();
 } 
 .arrow-buttons button i{
-    color: $strelice;
+    color: $arrows;
     font-size:16px;
     width: 9.98px;
 } 
