@@ -37,7 +37,7 @@ jQuery(document).ready(function ($) {
 
     $('.item1:last-child').prev().css({
       'box-shadow': '0 0 10px #808080',
-      'transform': 'scale(1.2) translateY(-8%)',
+      'transform': 'scale(1.2) translateY(8%)',
       'transition': 'all 0.4s'
     });
     $('.item1:last-child').css('opacity', '0');
